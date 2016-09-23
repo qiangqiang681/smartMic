@@ -116,14 +116,12 @@ public class MenuRVHandlers {
 
             public ImageView iv;
             public TextView name;
-//            public LinearLayout itemRl;
 
             public MenuVH(View itemView) {
                 super(itemView);
 
                 iv = (ImageView) itemView.findViewById(R.id.iv);
                 name = (TextView) itemView.findViewById(R.id.name);
-//                itemRl = (LinearLayout) itemView.findViewById(R.id.itemRl);
 
             }
         }
