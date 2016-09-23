@@ -44,9 +44,10 @@ public class ViewPagerDelegate implements View.OnClickListener {
         for (int i = 0; i < fragmentCount; i++) {
 
             int lastIndex = Math.min((i + 1) * (mNumColumns * 2), menuEntities.size());
-            MenuRVHandlers menuListViewHandlers = new MenuRVHandlers(mNumColumns, menuEntities.subList(i * (mNumColumns * 2), lastIndex));
+            MenuRVHandlers menuRVHandlers = new MenuRVHandlers(mNumColumns, menuEntities.subList(i * (mNumColumns * 2), lastIndex));
 
-            menuRVHandlerses.add(menuListViewHandlers);
+            menuRVHandlerses.add(menuRVHandlers);
+
         }
         mViewPager.setAdapter(new ViewpagerAdapter(menuRVHandlerses));
         mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
